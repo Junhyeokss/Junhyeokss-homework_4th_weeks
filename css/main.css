@@ -1,0 +1,58 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 0 100px;
+}
+
+.header_wrap {
+  display: flex;
+}
+
+.header h1 {
+  flex: 1;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+.header .gnb {
+  line-height: 100px;
+}
+
+.header ul {
+  display: flex;
+  gap: 30px;
+}
+
+.header .util {
+  flex: 1;
+  vertical-align: middle;
+
+  display: flex;
+  justify-content: flex-end;
+}
+.header .util ul {
+  display: flex;
+  line-height: 100px;
+  gap: 20px;
+}
+
+.header .util li {
+  position: relative;
+}
+
+.header .util ul > li ~ li::before {
+  position: absolute;
+  content: "";
+  top: 45px;
+  left: -8px;
+  width: 1px;
+  height: 13px;
+  background: #333;
+}
+
+.header .util ul :nth-child(5)::before {
+  display: none;
+}
