@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./css/slick.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>KCC건설</title>
-    <script src="./js/main.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -22,12 +22,79 @@
         </h1>
         <nav class="gnb">
           <ul class="header_menu">
-            <li><a href="">회사소개</a></li>
-            <li><a href="">사업분야</a></li>
-            <li><a href="">지속가능경영</a></li>
-            <li><a href="">투자정보</a></li>
-            <li><a href="">홍보센터</a></li>
-            <li><a href="">채용정보</a></li>
+            <li>
+              <a class="link" href="">회사소개</a>
+              <div class="menu_wrap">
+                <ul class="submenu">
+                  <li><a href="">CEO 인사말 </a></li>
+                  <li><a href="">연혁 및 수상 </a></li>
+                  <li><a href="">관계사소개 </a></li>
+                  <li><a href="">찾아오시는 길</a></li>
+                  <li><a href="">관계사</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="link" href="">사업분야</a>
+              <div class="menu_wrap">
+                <ul class="submenu">
+                  <li><a href="">CEO 인사말 </a></li>
+                  <li><a href="">연혁 및 수상 </a></li>
+                  <li><a href="">관계사소개 </a></li>
+                  <li><a href="">찾아오시는 길</a></li>
+                  <li><a href="">관계사</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="link" href="">지속가능경영</a>
+              <div class="menu_wrap">
+                <ul class="submenu">
+                  <li><a href="">CEO 인사말 </a></li>
+                  <li><a href="">연혁 및 수상 </a></li>
+                  <li><a href="">관계사소개 </a></li>
+                  <li><a href="">찾아오시는 길</a></li>
+                  <li><a href="">관계사</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="link" href="">투자정보</a>
+              <div class="menu_wrap">
+                <ul class="submenu">
+                  <li><a href="">CEO 인사말 </a></li>
+                  <li><a href="">연혁 및 수상 </a></li>
+                  <li><a href="">관계사소개 </a></li>
+                  <li><a href="">찾아오시는 길</a></li>
+                  <li><a href="">관계사</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a class="link" href="">홍보센터</a>
+              <div class="menu_wrap">
+                <ul class="submenu">
+                  <li><a href="">CEO 인사말 </a></li>
+                  <li><a href="">연혁 및 수상 </a></li>
+                  <li><a href="">관계사소개 </a></li>
+                  <li><a href="">찾아오시는 길</a></li>
+                  <li><a href="">관계사</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a class="link" href="">채용정보</a>
+              <div class="menu_wrap">
+                <ul class="submenu">
+                  <li><a href="">CEO 인사말 </a></li>
+                  <li><a href="">연혁 및 수상 </a></li>
+                  <li><a href="">관계사소개 </a></li>
+                  <li><a href="">찾아오시는 길</a></li>
+                  <li><a href="">관계사</a></li>
+                </ul>
+              </div>
+            </li>
           </ul>
         </nav>
         <div class="util">
@@ -36,7 +103,7 @@
             <li><a href="">회원가입</a></li>
             <li><a href="">고객센터</a></li>
             <li>
-              <a href=""><img src="./img/util_ENG.png" alt="" /></a>
+              <a href=""><i class="xi-translate"></i></a>
             </li>
             <li>
               <a href=""><i class="xi-bars"></i></a>
@@ -47,43 +114,33 @@
     </header>
 
     <main>
-      <div class="mianVisual">
+      <div class="mainVisual">
+        <div class="Name">
+          <p>CREATIVE</p>
+        </div>
+        <div class="Name02">
+          <p>창의적 시각으로 건설 이상향을 만들어갑니다</p>
+        </div>
         <div class="inner">
-          <div class="img_box">
-            <figure>
-              <a href=""
-                ><img src="./img/20190319_131037017_022.jpg" alt=""
-              /></a>
-            </figure>
-          </div>
-          <div class="img_box">
-            <figure>
-              <a href=""
-                ><img src="./img/20190319_131054629_025.jpg" alt=""
-              /></a>
-            </figure>
-          </div>
-          <div class="img_box">
-            <figure>
-              <a href=""
-                ><img src="./img/20221208_161642815_030.jpg" alt=""
-              /></a>
-            </figure>
-          </div>
-          <div class="img_box">
-            <figure>
-              <a href=""
-                ><img src="./img/20190319_131110116_029.jpg" alt=""
-              /></a>
-            </figure>
-          </div>
-          <div class="img_box">
-            <figure>
-              <a href=""
-                ><img src="./img/20190319_131258673_034.jpg" alt=""
-              /></a>
-            </figure>
-          </div>
+          <figure>
+            <a href=""><img src="./img/20190319_131037017_022.jpg" alt="" /></a>
+          </figure>
+
+          <figure>
+            <a href=""><img src="./img/20190319_131054629_025.jpg" alt="" /></a>
+          </figure>
+
+          <figure>
+            <a href=""><img src="./img/20221208_161642815_030.jpg" alt="" /></a>
+          </figure>
+
+          <figure>
+            <a href=""><img src="./img/20190319_131110116_029.jpg" alt="" /></a>
+          </figure>
+
+          <figure>
+            <a href=""><img src="./img/20190319_131258673_034.jpg" alt="" /></a>
+          </figure>
         </div>
       </div>
     </main>
