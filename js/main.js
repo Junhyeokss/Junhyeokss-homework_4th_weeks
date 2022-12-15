@@ -1,7 +1,11 @@
-$(".inner ").slick({
+$(".mainVisual .inner ").slick({
   autoplay: true,
-  arrows: false,
+  autoplaySpeed: 4000,
+  pauseOnHover: false,
+  pauseOnFocus: false,
   dots: false,
+  fade: true,
+  arrows: false,
 });
 
 var Name = ["CREATIVE", "COOPERATION", "MAKE A WONDERFUL WORLD", "SINCERITY"];
@@ -19,5 +23,33 @@ $(".mainVisual .inner").on("init reInit afterChange", function (e, s, c) {
     .siblings()
     .removeClass("on");
   $(".Name").text(Name[c]);
-  $(".Name02").text(Name02[c]);
+  $(".Name02 ").text(Name02[c]);
+});
+
+var Name03 = [
+  "MAKE A WONDERFUL WORLD",
+  "김포 한강 2차 KCC스위첸",
+  "동탄-수원 국도",
+  "KCC 대죽3공장",
+];
+
+$(".mainVisual .inner").on("init reInit afterChange", function (e, s, c) {
+  $(".main_slick .inner figure")
+    .eq(c + 5)
+    .addClass("on")
+    .siblings()
+    .removeClass("on");
+  $(".Name03").text(Name03[c]);
+});
+
+$(".mainVisual .arrows i:first-child").on("click", function () {
+  $(".inner").slick("slickPrev");
+});
+$(".mainVisual .arrows i:last-child").on("click", function () {
+  $(".inner").slick("slickNext");
+});
+
+$(".mainVisual").on("init afterChange", function (e, s, c) {
+  $(".num span").text(c ? c + 1 : 1);
+  $(".num strong").text(s.slideCount);
 });
