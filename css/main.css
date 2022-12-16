@@ -131,7 +131,7 @@
 
 .mainVisual .Name {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   margin: 0 0 0 -600px;
   color: #fff;
@@ -140,9 +140,34 @@
   text-shadow: 0 0 10px #333;
 }
 
+.mainVisual .inner .img_box h2 {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin: 0 0 0 -600px;
+  color: #fff;
+  font-size: 20px;
+  z-index: 100;
+}
+
+.mainVisual .inner .img_box p {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 0 0 -600px;
+  color: #fff;
+  font-size: 50px;
+  z-index: 100;
+  line-height: 70px;
+  font-weight: 600;
+  text-shadow: 0 0 3px #333;
+}
+
 .mainVisual .Name02 {
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 50%;
   font-size: 50px;
   margin: 0 0 0 -600px;
@@ -207,6 +232,7 @@
 
 .mainContent {
   padding: 100px 0;
+  position: relative;
 }
 
 .mainContent h2 {
@@ -299,62 +325,165 @@
   padding: 15px 0 0 0;
 }
 
-.newsContent {
-  padding: 0 0 100px 0;
-  background: rgb(250, 250, 250);
+.mainContent .before::before {
+  content: "";
+  position: absolute;
+  background: #333;
+  bottom: 0%;
+  left: 50%;
+  width: 1px;
+  height: 8%;
 }
 
-.newsContent h2 {
-  text-align: center;
-  padding: 50px;
-  font-size: 30px;
-  font-weight: 500;
+.mainNews .main_list strong {
+  display: block;
+  margin: 0 0 20px 0;
+  font-size: 22px;
+  font-weight: 300;
+  color: #111;
 }
 
-.newsContent .inner {
+.mainNews {
+  padding: 100px 0;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.mainNews .inner {
   width: 1200px;
   margin: 0 auto;
 }
 
-.newsContent .inner .news_box .news {
-  height: 150px;
-  box-shadow: 0 0 2px #333;
-  padding: 30px;
-  margin: 0 0 8px 0;
-  background: #fff;
+.mainNews h2 {
+  width: 1200px;
+  margin: 0 auto 40px auto;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  color: #111;
+}
+
+.mainNews .before::before {
+  content: "";
+  position: absolute;
+  background: #333;
+  top: 0%;
+  left: 50%;
+  width: 1px;
+  height: 8%;
+}
+
+.main_list > li {
   position: relative;
+  background: #fff;
+  border: 1px solid #eee;
 }
 
-.newsContent .inner .news p {
+.main_list > li::before {
   position: absolute;
-  right: 7%;
-  top: 40%;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 1px solid #8cafdd;
+  border-left: 1px solid #8cafdd;
+  transition: 0.5s;
+}
+.main_list > li:hover:before {
+  width: 100%;
+  height: 0;
 }
 
-.newsContent .inner .news span {
+.main_list > li a::before {
   position: absolute;
-  top: 70%;
-  font-size: 12px;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 1px solid #8cafdd;
+  border-left: 1px solid #8cafdd;
+  transition: 0.8s;
+}
+.main_list > li a:hover:before {
+  width: 0;
+  height: 100%;
+}
+.main_list > li a::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 1px solid #8cafdd;
+  border-left: 1px solid #8cafdd;
+  transition: 1.1s;
+}
+.main_list > li a:hover::after {
+  width: 0;
+  height: 100%;
 }
 
-.newsContent .inner .news i {
+.main_list > li::after {
+  content: "";
   position: absolute;
-  right: 5%;
-  top: 40%;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 1px solid #8cafdd;
+  border-right: 1px solid #8cafdd;
+  transition: 1.4s;
+}
+.main_list > li:hover:after {
+  width: 100%;
+  height: 0;
 }
 
-.newsContent .inner .news strong {
-  position: absolute;
-  top: 35%;
+.mainNews .main_list strong {
+  display: block;
+  margin: 0 0 20px 0;
   font-size: 22px;
+  font-weight: 300;
+  color: #111;
+}
+
+.mainNews .main_list span {
+  font-size: 14px;
+}
+
+.mainNews .main_list li {
+  margin: 0 0 10px 0;
+}
+
+.mainNews .main_list li a {
+  display: block;
+  padding: 40px 50px;
+  position: relative;
+  z-index: 999;
+}
+
+.mainNews .cate {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translate(0, -50%);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.mainNews .cate i {
+  margin: 0 0 0 30px;
 }
 
 .kccReport {
-  padding: 0 0 100px 0;
+  padding: 100px 0;
   position: relative;
   background: url(../img/20221208_161642815_030.jpg) no-repeat fixed center
     center/cover;
-  height: 250px;
+  height: 350px;
 }
 
 .kccReport::before {
@@ -383,7 +512,7 @@
 .kccReport P {
   position: absolute;
   top: 50%;
-  left: 45.5%;
+  left: 45.4%;
   margin: 0 auto;
   color: #fff;
   font-weight: 600;
@@ -403,6 +532,7 @@
 
 .chContent {
   padding: 100px 0;
+  position: relative;
 }
 
 .chContent h2 {
@@ -434,9 +564,20 @@
   float: right;
 }
 
+.chContent .before::before {
+  content: "";
+  position: absolute;
+  background: #333;
+  bottom: 0%;
+  left: 50%;
+  width: 1px;
+  height: 8%;
+}
+
 .reCruit {
-  padding: 0 0 100px 0;
+  padding: 100px 0;
   background: rgb(250, 250, 250);
+  position: relative;
 }
 
 .reCruit .inner {
@@ -461,14 +602,14 @@
 
 .reCruit .inner .bus_picture span {
   position: absolute;
-  top: 30%;
+  top: 23%;
   color: #fff;
   padding: 10px;
 }
 
 .reCruit .inner .bus_picture strong {
   position: absolute;
-  top: 40%;
+  top: 35%;
   color: #fff;
   padding: 0 0 15px 10px;
   font-size: 50px;
@@ -476,15 +617,25 @@
 
 .reCruit .inner .bus_picture p {
   position: absolute;
-  top: 60%;
+  top: 55%;
   color: #fff;
   padding: 10px;
   font-size: 16px;
   line-height: 25px;
 }
 
+.reCruit .before::before {
+  content: "";
+  position: absolute;
+  background: #333;
+  top: 0%;
+  left: 50%;
+  width: 1px;
+  height: 8%;
+}
+
 .conNect {
-  padding: 50px 0 100px 0;
+  padding: 100px 0 50px 0;
 }
 
 .conNect .inner {
@@ -499,12 +650,44 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #333;
+  background: #f9f9f9;
   padding: 30px;
+  flex: 1 0 40%;
+  position: relative;
+  box-shadow: 0 0 1.5px #333;
 }
 
-.conNect .inner .box {
-  flex: 1 0 40%;
+.conNect .inner .box::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 1px solid #8cafdd;
+  border-left: 1px solid #8cafdd;
+  transition: 0.5s;
+}
+
+.conNect .inner .box:hover:before {
+  width: 100%;
+  height: 100%;
+}
+.conNect .inner .box::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 1px solid #8cafdd;
+  border-right: 1px solid #8cafdd;
+  transition: 0.5s;
+}
+
+.conNect .inner .box:hover:after {
+  width: 100%;
+  height: 100%;
 }
 
 .footer {
@@ -534,7 +717,7 @@
 
 .footer span {
   position: absolute;
-  top: 33%;
+  top: 40%;
   left: 18.5%;
   color: #ddd;
   font-size: 12px;
@@ -542,7 +725,7 @@
 
 .footer p {
   position: absolute;
-  top: 48%;
+  top: 54%;
   left: 18.5%;
   color: #ddd;
   font-size: 12px;
