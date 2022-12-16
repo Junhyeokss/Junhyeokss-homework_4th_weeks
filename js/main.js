@@ -1,5 +1,5 @@
 $(".mainVisual .inner ").slick({
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 4000,
   pauseOnHover: false,
   pauseOnFocus: false,
